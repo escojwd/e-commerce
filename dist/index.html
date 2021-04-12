@@ -5,18 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gentium With Tailwind</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-mainFont font-bold">
     <main>
         <section id="home" class="bg-black">
-            <div class="px-80 pt-16 text-white">
+            <div class="w-container mx-auto pt-16 text-white">
                 <header class="flex justify-between mb-40">
                     <div>
                         <a href="#" class="text-4xl font-bold">Gentium.</a>
@@ -24,26 +18,33 @@
                     <div class="flex items-center">
                         <nav>
                             <ul class="flex justify-between gap-10">
-                                <li>
+                                <li  class="group">
                                     <a href="#">Home</a>
+                                    <div class="w-6 h-1 bg-primary"></div>
                                 </li>
-                                <li>
+                                <li class="group">
                                     <a href="#">Services</a>
+                                    <div class="w-6 h-1 group-hover:bg-primary duration-500"></div>
                                 </li>
-                                <li>
+                                <li class="group">
                                     <a href="#">Works</a>
+                                    <div class="w-6 h-1 group-hover:bg-primary duration-500"></div>
                                 </li>
-                                <li>
+                                <li class="group">
                                     <a href="#">About</a>
+                                    <div class="w-6 h-1 group-hover:bg-primary duration-500"></div>
                                 </li>
-                                <li>
+                                <li class="group">
                                     <a href="#">Client</a>
+                                    <div class="w-6 h-1 group-hover:bg-primary duration-500"></div>
                                 </li>
-                                <li>
+                                <li class="group">
                                     <a href="#">Blog</a>
+                                    <div class="w-6 h-1 group-hover:bg-primary duration-500"></div>
                                 </li>
-                                <li>
+                                <li class="group">
                                     <a href="#">Contact</a>
+                                    <div class="w-6 h-1 group-hover:bg-primary duration-500"></div>
                                 </li>
                                 <li>
                                     <i class="fas fa-search"></i>
@@ -67,81 +68,117 @@
                         </span>
                         <p class="mt-14">Future Vision.</p>
                         <div class="w-8 h-0.5 mt-1 mb-4 bg-white"></div>
-                        <p class="font-light mb-11">It is a long established fact that a reaer will bbe distracred by the readable content of a page</p>
+                        <p class="font-light mb-11">It is a long established fact that a reader will be distracred by the readable content of a page</p>
                     </div>
-                    <div class="bg-secondary hover:bg-primary duration-700 w-customOne py-14 px-10 relative">
-                        <span class="text-5xl">
+                    <div class="bg-secondary hover:bg-primary duration-700 w-customOne py-14 px-10 relative group">
+                        <span class="text-5xl text-primary group-hover:text-white duration-500">
                             <i class="fas fa-rocket"></i>
                         </span>
                         <p class="mt-14">Product Design.</p>
-                        <div class="w-8 h-0.5 mt-1 mb-4 bg-primary"></div>
-                        <p>There are many vatiantions of passages of available, but the majority alteration in some form.</p>
+                        <div class="w-8 h-0.5 mt-1 mb-4 bg-primary group-hover:bg-white duration-500"></div>
+                        <p class="font-light mb-11">There are many vatiantions of passages of available, but the majority alteration in some form.</p>
                         <div class="w-8 h-0.5 mt-1 mb-4 bg-primary absolute -bottom-8 right-2/4 transform rotate-90"></div>
                     </div>
-                    <div class="bg-secondary hover:bg-green-500 duration-700 relative w-customOne py-14 px-10 z-10">
-                        <span class="text-5xl">
+                    <div class="bg-secondary hover:bg-green-500 duration-700 relative w-customOne py-14 px-10 z-10 group">
+                        <span class="text-5xl text-primary group-hover:text-white duration-500">
                             <i class="fas fa-chart-pie"></i>
                         </span>
                         <p class="mt-14">Inovative Solutions.</p>
-                        <div class="w-8 h-0.5 mt-1 mb-4 bg-primary hover:bg-white"></div>
+                        <div class="w-8 h-0.5 mt-1 mb-4 bg-primary hover:bg-white group-hover:bg-white duration-500"></div>
                         <p class="font-light mb-11">The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
                         <div class="bg-primary absolute w-customTwo h-20 -bottom-4 left-0 z-0"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="services"  class="w-container mx-auto mt-40">
             <div>
-                <div></div>
+                <div  class="w-10 h-1 mt-16 mb-14 bg-primary"></div>
                 <!-- red-line -->
-                <h2>Services.</h2>
-                <p>we work with you, not for you</p>
+                <h2 class="text-5xl text-black">Services.</h2>
+                <p class="text-primary mt-8 mb-20 uppercase">we work with you, not for you</p>
             </div>
-            <div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+            <div class="flex flex-wrap justify-center gap-10">
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500 relative">
+                    <span class="text-2xl absolute duration-500 group-hover:text-primary">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">Digitale Strategy</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500">
+                    <span class="group-hover:bg-green-500">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">UX Design</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500">
+                    <span class="group-hover:bg-green-500">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">Product Design</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500">
+                    <span class="group-hover:bg-green-500">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">Content Strategy</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500">
+                    <span class="group-hover:bg-green-500">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">Design & Concept</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500">
+                    <span class="group-hover:bg-green-500">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">Social Media</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500">
+                    <span class="group-hover:bg-green-500">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">Media Planing</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500">
+                    <span class="group-hover:bg-green-500">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">Brand Identity</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div>
-                    <!-- <i></i> -->
-                    <p>Digitale Strategy</p>
-                    <!-- <i></i> -->
+                <div  class="w-96 py-10 px-8 bg-third flex justify-between items-center group hover:bg-primary duration-500">
+                    <span class="group-hover:bg-green-500">
+
+                    </span>
+                    <p class="font-bold group-hover:text-white">SEO Optimization</p>
+                    <span class="text-2xl font-thin text-gray-500 group-hover:text-white">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
             </div>
             <!-- red-line -->
