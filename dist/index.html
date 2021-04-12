@@ -4,85 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gentium With Tailwind</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
+
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="font-mainFont font-bold">
     <main>
-        <section id="home">
-            <header>
-                <div>
-                    <a href="#">Gentium.</a>
+        <section id="home" class="bg-black">
+            <div class="px-80 pt-16 text-white">
+                <header class="flex justify-between mb-40">
+                    <div>
+                        <a href="#" class="text-4xl font-bold">Gentium.</a>
+                    </div>
+                    <div class="flex items-center">
+                        <nav>
+                            <ul class="flex justify-between gap-10">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Works</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Client</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-search"></i>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <div class="w-16 py-0.5 bg-primary mb-28"></div>
+                <div class="w-2/4">
+                    <h1 class="text-7xl">We're a digital agency</h1>
+                    <button class="border-2 border-primary mt-20 mb-40 hover:bg-primary p-4 duration-700" >
+                        <a class="p-10" href="#">Getting Started</a>
+                        <!-- move to services - section -->
+                    </button>
                 </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                            </li>
-                            <li>
-                                <a href="#">Works</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Client</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                            <li>
-                                <!-- <i></i> -->
-                                <!-- there'll be an icon -->
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <!--nothing special, red-line div -->
-            <div></div>
-            <h1>We're a digital agency</h1>
-            <div>
-                <button>
-                    <a href="#">Getting Started</a>
-                    <!-- move to services - section -->
-                </button>
-            </div>
-            <div>
-                <div>
-                    <!-- <i></i> -->
-                    <!-- there'll be an icon -->
-                    <p>Future Vision.</p>
-                    <!--nothing special, white-line div -->
-                    <div></div>
-                    <p>It is a long established fact that a reaer will bbe distracred by the readable content of a page</p>
-                </div>
-                <div>
-                    <!-- <i></i> -->
-                    <!-- there'll be an icon -->
-                    <p>Product Design.</p>
-                    <!--nothing special, white-line div -->
-                    <div></div>
-                    <p>There are many vatiantions of passages of available, but the majority alteration in some form.</p>
-                    <div></div>
-                    <!-- there'll be an underline red-line -->
-                </div>
-                <div>
-                    <!-- <i></i> -->
-                    <!-- there'll be an icon -->
-                    <p>Inovative Solutions.</p>
-                    <!--nothing special, white-line div -->
-                    <div></div>
-                    <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
-                    <!-- there'll be an underline red-div -->
-                    <div></div>
+                <div class="flex gap-10 justify-between">
+                    <div class="bg-primary py-14 px-10 w-customOne">
+                        <span class="text-5xl">
+                            <i class="far fa-chart-bar"></i>
+                        </span>
+                        <p class="mt-14">Future Vision.</p>
+                        <div class="w-8 h-0.5 mt-1 mb-4 bg-white"></div>
+                        <p class="font-light mb-11">It is a long established fact that a reaer will bbe distracred by the readable content of a page</p>
+                    </div>
+                    <div class="bg-secondary hover:bg-primary duration-700 w-customOne py-14 px-10 relative">
+                        <span class="text-5xl">
+                            <i class="fas fa-rocket"></i>
+                        </span>
+                        <p class="mt-14">Product Design.</p>
+                        <div class="w-8 h-0.5 mt-1 mb-4 bg-primary"></div>
+                        <p>There are many vatiantions of passages of available, but the majority alteration in some form.</p>
+                        <div class="w-8 h-0.5 mt-1 mb-4 bg-primary absolute -bottom-8 right-2/4 transform rotate-90"></div>
+                    </div>
+                    <div class="bg-secondary hover:bg-green-500 duration-700 relative w-customOne py-14 px-10 z-10">
+                        <span class="text-5xl">
+                            <i class="fas fa-chart-pie"></i>
+                        </span>
+                        <p class="mt-14">Inovative Solutions.</p>
+                        <div class="w-8 h-0.5 mt-1 mb-4 bg-primary hover:bg-white"></div>
+                        <p class="font-light mb-11">The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
+                        <div class="bg-primary absolute w-customTwo h-20 -bottom-4 left-0 z-0"></div>
+                    </div>
                 </div>
             </div>
         </section>
