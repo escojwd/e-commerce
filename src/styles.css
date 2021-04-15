@@ -5,9 +5,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* background-image: url(./img/header-background.jpg);
+@layer utilities {
+    @variants hover, focus {
+      .filter-none {
+        filter: grayscale(50%);
+      }
+      .filter-grayscale {
+        filter: grayscale(100%);
+      }
+    }
+  }
+
+
+  .snap-x {
+    scroll-snap-type: x mandatory;
+    
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.snap-start {
+  scroll-snap-align: start;
+}
+
+/* 1. ვთქვათ რომ გაწერილი მაქვს @apply, სადაც ვიყენებ width-ს... ელემენტის @apply კლასის გამოყენების შემდეგ გვერდით მიწერილი width იმუშავებს თუ არა? */
+
+/* 2. background-image: url(./img/header-background.jpg);
 height: 100vh;
 background-repeat: no-repeat;
 background-position: 70% 50%;
 background-size: 680px auto;
 background-color: black; */
+
+
+/* 3. what is diff between w-13 and w-2/6 ?? and like that  */
+
+/* 4. when I'm writing width: 395px element content width become 162.53px, reason??? on 'who we are' */
+
+/* 5. when I'm writing w-customOne (27rem) element content width become 175.63px, reason??? on 'aron smith' */

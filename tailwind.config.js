@@ -15,6 +15,12 @@ module.exports = {
         container: '65%',
         customOne: '40rem',
         customTwo: '27rem',
+        customThree: '37%',
+        customFour: '100rem',
+      },
+      height: {
+        customHOne: '37.5rem',
+        customHTwo: '40rem',
       }
     },
   },
