@@ -7,6 +7,7 @@ module.exports = {
         primary: '#e9204f',
         secondary: '#1b1b1b',
         third: '#f3f3f3',
+        fourth: '#161616',
       },
       fontFamily: {
         mainFont: ['Montserrat']
@@ -21,6 +22,12 @@ module.exports = {
       height: {
         customHOne: '37.5rem',
         customHTwo: '40rem',
+      },
+      backgroundSize: {
+        '65%' : '65%',
+      },
+      padding: {
+        '14px' : '0.875rem'
       }
     },
   },

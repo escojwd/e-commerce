@@ -16,16 +16,67 @@
     }
   }
 
-
   .snap-x {
     scroll-snap-type: x mandatory;
-    
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
-.snap-start {
-  scroll-snap-align: start;
+  .snap-start {
+    scroll-snap-align: start;
 }
+
+.single-service {
+  @apply w-96;
+  @apply py-10;
+  @apply px-8;
+  @apply bg-third;
+  @apply flex;
+  @apply justify-between;
+  @apply items-center;
+  @apply group;
+  @apply hover:bg-primary;
+  @apply duration-500;
+}
+
+/*  */
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: #2b6cb0;
+}
+
+/*  */
+
+
+
 
 /* 1. ვთქვათ რომ გაწერილი მაქვს @apply, სადაც ვიყენებ width-ს... ელემენტის @apply კლასის გამოყენების შემდეგ გვერდით მიწერილი width იმუშავებს თუ არა? */
 
@@ -42,3 +93,7 @@ background-color: black; */
 /* 4. when I'm writing width: 395px element content width become 162.53px, reason??? on 'who we are' */
 
 /* 5. when I'm writing w-customOne (27rem) element content width become 175.63px, reason??? on 'aron smith' */
+
+/* 6. animation  */
+
+/* 7. effect direction on hover */
