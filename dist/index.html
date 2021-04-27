@@ -79,13 +79,15 @@
                         <p class="font-light mb-11">There are many vatiantions of passages of available, but the majority alteration in some form.</p>
                         <div class="w-8 h-0.5 mt-1 mb-4 bg-primary absolute -bottom-8 right-2/4 transform rotate-90"></div>
                     </div>
-                    <div class="bg-secondary hover:bg-green-500 duration-700 relative w-customOne py-14 px-10 z-10 group">
-                        <span class="text-5xl text-primary group-hover:text-white duration-500">
-                            <i class="fas fa-chart-pie"></i>
-                        </span>
-                        <p class="mt-14">Inovative Solutions.</p>
-                        <div class="w-8 h-0.5 mt-1 mb-4 bg-primary hover:bg-white group-hover:bg-white duration-500"></div>
-                        <p class="font-light mb-11">The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
+                    <div class="bg-secondary hover:bg-green-500 duration-700 relative w-customOne py-14 px-10 group">
+                        <div class="z-10">
+                            <span class="text-5xl text-primary group-hover:text-white duration-500">
+                                <i class="fas fa-chart-pie"></i>
+                            </span>
+                            <p class="mt-14">Inovative Solutions.</p>
+                            <div class="w-8 h-0.5 mt-1 mb-4 bg-primary hover:bg-white group-hover:bg-white duration-500"></div>
+                            <p class="font-light mb-11">The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
+                        </div>
                         <div class="bg-primary absolute w-customTwo h-20 -bottom-4 left-0 z-0"></div>
                     </div>
                 </div>
@@ -196,60 +198,40 @@
                     <button class="border-2 border-primary hover:bg-primary px-8 py-3 duration-700 capitalize relative right-0">view all</button>
                 </div>
             </div>
-            <div class="bg-white font-sans leading-normal tracking-normal">
-                <div class="carousel relative shadow-2xl bg-white">
-                    <div class="carousel-inner relative overflow-hidden w-full">
-                      <!--Slide 1-->
-                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-                        <div class="carousel-item absolute opacity-0 h-customHTwo">
-                            <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center">Slide 1</div>
-                        </div>                        
-                        <!--Slide 2-->
-                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                        <div class="carousel-item absolute opacity-0 h-customHTwo">
-                            <div class="block h-full w-full bg-gray-500 text-white text-5xl text-center">Slide 2</div>
-                        </div>                        
-                        <!--Slide 3-->
-                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                        <div class="carousel-item absolute opacity-0 h-customHTwo">
-                            <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div>
-                        </div>                
-                        <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-                        <div class="carousel-item absolute opacity-0 h-customHTwo">
-                            <div class="block h-full w-full bg-red-500 text-white text-5xl text-center">Slide 3</div>
-                        </div>                
-                        <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
-                        <div class="carousel-item absolute opacity-0 h-customHTwo">
-                            <div class="block h-full w-full bg-blue-500 text-white text-5xl text-center">Slide 3</div>
-                        </div>                
-                        <input class="carousel-open" type="radio" id="carousel-6" name="carousel" aria-hidden="true" hidden="">
-                        <div class="carousel-item absolute opacity-0 h-customHTwo">
-                            <div class="block h-full w-full bg-yellow-500 text-white text-5xl text-center">Slide 3</div>
-                        </div>                
-                        <!-- Add additional indicators for each slide-->
-                        <ol class="carousel-indicators">
-                            <li class="inline-block mr-3">
-                                <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-4" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-5" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-6" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-                            </li>
-                        </ol>
-                    </div>
+            <!-- slider  -->
+            <div class="flex flex-col items-center">
+
+                <div class="w-full bg-white rounded overflow-x-hidden flex snap-x">
+                  <div class="snap-start w-customOne h-customHTwo flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-blue-600" id="slide-1">
+                    Slide 1
+                  </div>
+                  <div class="snap-start w-customOne h-customHTwo flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-green-600" id="slide-2">
+                    Slide 2
+                  </div>
+                  <div class="snap-start w-customOne h-customHTwo flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-red-600" id="slide-3">
+                    Slide 3
+                  </div>
+                  <div class="snap-start w-customOne h-customHTwo flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-yellow-600" id="slide-4">
+                    Slide 4
+                  </div>
+                  <div class="snap-start w-customOne h-customHTwo flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-purple-600" id="slide-5">
+                    Slide 5
+                  </div>
+                  <div class="snap-start w-customOne h-customHTwo flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative" id="slide-6">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80" class="h-full w-full object-cover absolute inset-0 z-10 opacity-25">
+                    <h1 class="z-20 text-center">Any kind of content here, images too!</h1>
+                  </div>
                 </div>
-            </div>
+              
+                <div class="flex mt-8">
+                  <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-1">1</a>
+                  <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-2">2</a>
+                  <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-3">3</a>
+                  <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-4">4</a>
+                  <a class="w-8 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-5">5</a>
+                  <a class="w-8 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-6">6</a>
+                </div>
+              </div>
             <div class="bg-primary absolute w-16 h-0.5 transform rotate-90 -bottom-40 right-1/2 translate-x-2/4"></div>
         </section>
         <section class="mt-72 w-container mx-auto relative">
